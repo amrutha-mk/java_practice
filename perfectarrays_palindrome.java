@@ -9,3 +9,27 @@ class Solution {
             return true;
         }
     }
+
+public class perfectarrays_palindrome {
+    public static void main(String[] args) {
+        int arr[] = {1, 2, 3, 4, 3, 2, 1};
+        int arr2[] = {1, 2, 3, 4, 5, 1, 2};
+
+        Solution obj = new Solution();
+
+        boolean res1 = obj.isPerfect(arr.length, arr);
+        boolean res2 = obj.isPerfect(arr2.length, arr2);
+        
+        if(res1 == true){
+            System.out.println("Array one is palindrome");
+        } else {
+            System.out.println("Arraya one is not palindrome");
+        }
+
+        if(res2 == true){
+            System.out.println("Array two is palindrome");
+        } else {
+            System.out.println("Arraya two is not palindrome");
+        }
+    }
+}
